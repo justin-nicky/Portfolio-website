@@ -1,14 +1,18 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>Justin</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Justin</title>
 </head>
+
 <body>
-   <!-- navbar -->
+  <!-- navbar -->
   <nav class="navbar navbar-expand-md navbar-light pt-5 pb-4">
     <div class="container-xxl">
       <!-- navbar brand / title -->
@@ -18,7 +22,8 @@
         </span>
       </a>
       <!-- toggle button for mobile nav -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+        aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -29,10 +34,7 @@
             <a class="nav-link" href="#intro">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item d-md-none">
             <a class="nav-link" href="#">Portfolio</a>
@@ -40,7 +42,7 @@
           <li class="nav-item ms-2 d-none d-md-inline">
             <a class="btn btn-secondary" href="#contact">Contact Me</a>
           </li>
-          
+
         </ul>
       </div>
     </div>
@@ -54,10 +56,15 @@
         <div class="col-md-5 text-center text-md-start">
           <h1>
             <div class="display-2"></div>
-            <div class="display-5 text-muted">Hi, I'm Justin</div>
+            <div class="display-5 text-muted">Hi, I'm Justin.</div>
           </h1>
-          <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dignissimos?</p>
+          <p class="lead my-4 text-muted">Aspiring Backend developer and a tech enthusiast based in kerala, India.</p>
           <a href="#contact" class="btn btn-secondary btn-lg">Hire Me</a>
+          <div class="social-link fs-5 pt-4">
+            <a href="https://www.instagram.com/justin_nicky_/" class="bi bi-instagram text-muted pe-3"></a>
+            <a href="https://github.com/justin-nicky" class="bi bi-github text-muted pe-3"></a>
+            <a href="https://www.linkedin.com/in/justin-k-joseph-807261a8/" class="bi bi-linkedin text-muted"></a>
+          </div>
         </div>
         <div class="col-md-4 text-center d-md-block ">
           <img src="/assets/justin2.png" class="img-fluid">
@@ -67,6 +74,117 @@
   </section>
   <!-- home end -->
 
+  <!-- about -->
+  <section id="about">
+    <div class="container-lg pt-5 justify-content-center">
+      <div class="g-4 justify-content-center">
+        <div class="text-center text-md-start">
+          <h1>
+            <div class="display-2"></div>
+            <div class="display-5 text-muted text-center">About Me</div>
+          </h1>
+          <p class="lead my-4 text-muted text-center">I'm currently a student at Crossroads Academy, specializing in
+            MERN stack.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- about end -->
 
+  <!-- contact -->
+  <section id="contact">
+    <div class="container-lg pt-5">
+
+      <div class="text-center">
+        <h2 class="display-5 text-muted">Get in Touch</h2>
+      </div>
+      <div class="row justify-content-center my-5">
+
+        <div class="col-lg-4 pt-2">
+          <div class="contact-item d-flex">
+            <div class="icon fs-4">
+              <i class="bi bi-envelope"></i>
+            </div>
+            <div class="ms-3">
+              <h3 class="fs-6">Email</h3>
+              <p class="text-muted">justinkjoseph17@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item d-flex">
+            <div class="icon fs-4">
+              <i class="bi bi-phone"></i>
+            </div>
+            <div class="ms-3">
+              <h3 class="fs-6">Phone</h3>
+              <p class="text-muted">9746622945</p>
+            </div>
+          </div>
+          <div class="contact-item d-flex">
+            <div class="icon fs-4">
+              <i class="bi bi-geo-alt"></i>
+            </div>
+            <div class="ms-3">
+              <h3 class="fs-6">Place</h3>
+              <p class="text-muted">Kottyam, kerala</p>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="col-lg-6">
+          <form id="submit-form" onsubmit="validate()">
+            <div class="text-danger" id="error_email"></div>
+            <div class="input-group mb-4">
+              
+              <span class="input-group-text">
+                <i class="bi bi-envelope-fill text-secondary"></i>
+              </span>
+              
+              <input type="email" placeholder="Email" id="email" class="form-control" name="email"/>
+            </div>
+            <div class="text-danger " id="error_name"></div>
+            <div class="mb-4 input-group">
+              <span class="input-group-text">
+                <i class="bi bi-person-fill text-secondary"></i>
+              </span>
+
+              <input type="text" placeholder="Name" id="name" class="form-control" name="name" />
+            </div>
+            <div class="text-danger" id="error_phone"></div>
+
+            <div class="mb-4 input-group">
+              <span class="input-group-text">
+                <i class="bi bi-telephone-fill text-secondary"></i>
+              </span>
+              <input type="tel" placeholder="phone" id="phone" class="form-control" name="phone" />
+            </div>
+            <div class="text-danger py-6" id="error_message"></div>
+            <div class="mb-4 mt-5 form-floating">
+              <textarea class="form-control" id="query" style="height: 140px" placeholder="query" name="text"></textarea>
+              <label for="query">Your query...</label>
+            </div>
+
+            <div class="mb-4 text-center">
+              <button type="submit" class="btn btn-secondary">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- contact end -->
+  <script>
+    document.getElementById('submit-form').addEventListener('submit', (e) => {e.preventDefault();})
+  </script>
+  <script type="text/javascript" src="index.js"></script> 
 </body>
+
 </html>
