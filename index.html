@@ -140,7 +140,16 @@
 
 
         <div class="col-lg-6">
-          <form id="submit-form" onsubmit="validate()">
+          <form id="submit-form" onsubmit="post()">
+            
+            <div class="text-danger " id="error_name"></div>
+            <div class="mb-4 input-group">
+              <span class="input-group-text">
+                <i class="bi bi-person-fill text-secondary"></i>
+              </span>
+              <input type="text" placeholder="Name" id="name" class="form-control" name="name" />
+            </div>
+
             <div class="text-danger" id="error_email"></div>
             <div class="input-group mb-4">
               
@@ -148,16 +157,9 @@
                 <i class="bi bi-envelope-fill text-secondary"></i>
               </span>
               
-              <input type="email" placeholder="Email" id="email" class="form-control" name="email"/>
+              <input type="text" placeholder="Email" id="email" class="form-control" name="email"/>
             </div>
-            <div class="text-danger " id="error_name"></div>
-            <div class="mb-4 input-group">
-              <span class="input-group-text">
-                <i class="bi bi-person-fill text-secondary"></i>
-              </span>
 
-              <input type="text" placeholder="Name" id="name" class="form-control" name="name" />
-            </div>
             <div class="text-danger" id="error_phone"></div>
 
             <div class="mb-4 input-group">
@@ -168,12 +170,12 @@
             </div>
             <div class="text-danger py-6" id="error_message"></div>
             <div class="mb-4 mt-5 form-floating">
-              <textarea class="form-control" id="query" style="height: 140px" placeholder="query" name="text"></textarea>
+              <textarea class="form-control" id="message" style="height: 140px" placeholder="query" name="message"></textarea>
               <label for="query">Your query...</label>
             </div>
 
             <div class="mb-4 text-center">
-              <button type="submit" class="btn btn-secondary">Submit</button>
+              <button type="submit" id="submit" class="btn btn-secondary">Submit</button>
             </div>
           </form>
         </div>
